@@ -1,0 +1,47 @@
+|CALCULANDO O IMC|
+------------------
+#include <iostream>
+using namespace std;
+main()
+{
+    int cont, sexo, idade, masc=0, fem=0, maior=0, menor=0;
+    float peso, alt, imc;
+    for (cont=1;cont<=30;cont=cont+1)
+    {
+        cout<< "Digite sua idade:";
+        cin >> idade;
+        cout<< "Digite seu sexo: 1-masc ou 2-fem: ";
+        cin >> sexo;
+        cout << "Digite seu peso: ";
+        cin >> peso;
+        cout << "Digite sua altura: ";
+        cin >> alt;
+        if (idade >= 18)
+            maior = maior + 1;
+        else
+            menor = menor + 1;
+        if (sexo == 1)
+            masc = masc + 1;
+        else
+            fem = fem + 1;
+        imc = peso / (alt*alt);
+        if (imc < 18.5)
+            cout << "Abaixo do peso";
+        else
+            if (imc>18.5 && imc<24.9)
+                cout << "Peso normal";
+            else
+                if (imc > 25 && imc < 29.9)
+                    cout << "Sobrepeso";
+                else
+                    if (imc > 30 && imc < 39.9)
+                        cout << "Obeso";
+                    else
+                        if (imc > 40)
+                            cout << "Peso grave";
+    }
+    cout << "Qtde masculinos: " << masc;
+    cout << "Qtde femininos: " << fem;
+    cout << "Qtde maiores de idade: " << maior;
+    cout << "Qtde menores de idade: " << menor;
+}
