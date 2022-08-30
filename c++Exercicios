@@ -1,0 +1,94 @@
+EXERCICIO 1 EXIBIR NUMEROS DE 1 A 50
+#include <iostream>
+using namespace std;
+main()
+{
+	int cont, num=1;
+	for(cont=1;cont<=50;cont=cont+1)
+	{
+		cout<<"\n"<<num;
+		num=num+1;
+	}
+}
+EXERCICIO 2 CALCULAR O RESTO DE UM NUMERO E DESCOBRIR SE E PAR OU IMPAR
+#include <iostream>
+using namespace std;
+main()
+{
+	int cont, num=0;
+	for(cont=1;cont<=100;cont=cont+1)
+	{
+		num=num+1;
+		if(num % 2==0)
+		cout<<"\n"<<num;
+	}
+}
+EXERCICIO 3 Ler um valor inteiro (aceitar somente valores entre 1 e 10) e escrever a tabuada de 1 a 10 do valor lido. 
+#include <iostream>
+using namespace std;
+main()
+{
+	int cont, num, num2=1, soma;
+	
+	cout<<"\ndigite o num: ";
+	cin>>num;
+	if (num<=10)
+	for(cont=1;cont<=10;cont=cont+1)
+	{
+		soma= num*num2;
+		cout<<"\n"<<num<<" vezes "<<num2<<" e igual a: "<<soma;
+		num2=num2+1;
+	}
+  EXERCICIO 4 Leia 20 idades e calcule a média entre as idades. 
+#include <iostream>
+using namespace std;
+main()
+{
+	int cont, num, soma, media;
+	for(cont=1;cont<=2;cont=cont+1)
+	{
+		cout<<"\ndigite o numero: ";
+		cin>>num;
+		soma=soma+num;
+	}
+	media=soma/2;
+	cout<<"a media foi: "<<media;
+}
+EXERCICIO 5 Ler 10 números e imprimir quantos são pares e quantos são ímpares. 
+		#include <iostream>
+using namespace std;
+main()
+{
+	int cont, num, par=0, inpar=0;
+	for(cont=1;cont<=10;cont=cont+1)
+	{
+		cout<<"digite o numero: ";
+		cin>>num;
+		if(num % 2 ==0)
+			par=par+1;
+		else
+			if(num % 2 !=0)
+			 inpar=inpar+1;
+	}
+	cout<<"o numero de pares foi: "<<par;
+	cout<<"\no numero de pares foi: "<<inpar;
+
+}
+EXERCICIO 6 6) Faça um programa em C que receba 10 números e conte quantos deles estão no intervalo entre 10 e 20 e quantos deles estão fora do intervalo, escrevendo estas informações. 
+#include <iostream>
+using namespace std;
+main()
+{
+	int cont, num, guard=0, guardfora=0;
+	for (cont=1;cont<=10;cont++)
+{
+	cout << "Digite Um numero";
+	cin >>num;
+	if (num >10 && num<20)
+	guard = guard + 1;
+	else 
+	guardfora = guardfora + 1;
+}
+cout << "Numero que Estavam no intervalo : " <<guard;
+cout << "Numeros que estavam fora do intervalo :" <<guardfora;
+}
